@@ -11,7 +11,7 @@
   --color-secondary: #00beff;
   --color-secondary-transparent: #00bfff78;
   --color-secondary-alt: #c43e1c;
-  
+
   --color-text-primary-alt: #f8f8f8;
   --color-text-primary: #f8f8f8;
 
@@ -20,7 +20,7 @@
   --color-text-black: #1a1a1a;
 
   /* Start for Gradient services */
-  --color-bg-light-blue-to-light-green:#0dadfd;
+  --color-bg-light-blue-to-light-green: #0dadfd;
   --color-bg-dark-blue-to-dark-green: #5973f8;
   /* End for Gradient services */
 
@@ -41,7 +41,7 @@
 /* <=================== Start Global Rules =========================>*/
 
 * {
-  font-family: Fira Code , monospace;
+  font-family: Fira Code, monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -62,6 +62,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-primary);
+  box-shadow: 0px 10px 10px 30px var(--color-primary);
 }
 
 a {
@@ -115,8 +116,9 @@ ul {
   border: 1px solid var(--color-primary);
   border-radius: 0.375rem;
   background-color: transparent;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  margin-right: 4px ;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-right: 4px;
 }
 .btn:hover {
   color: var(--color-text-primary);
@@ -133,7 +135,7 @@ ul {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(144 , 160 , 217, .5) ;
+  box-shadow: 0 0 0 0.25rem rgba(144, 160, 217, 0.5);
 }
 
 section {
@@ -190,13 +192,12 @@ div.section-heading {
   margin-bottom: 1rem;
   color: #0f5132;
   background-color: #d1e7dd;
-  border: 1px solid #badbcc ;
+  border: 1px solid #badbcc;
   border-radius: 0.375rem;
 }
 .custom-alert-success p {
   margin: 0px;
 }
-
 
 .custom-alert-danger {
   position: relative;
@@ -211,7 +212,7 @@ div.section-heading {
 
 .custom-alert-danger::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   top: -30px;
@@ -223,7 +224,6 @@ div.section-heading {
   background-color: var(--bs-alert-bg);
 }
 
-
 /* <=================== End Components =========================>*/
 /* <=================== Start Header =========================>*/
 body {
@@ -233,7 +233,7 @@ body {
 }
 
 .page-container {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1141px) {
@@ -299,7 +299,6 @@ header .logo:hover h1 a span.func-brackets {
   color: var(--color-secondary-alt);
 }
 
-
 header .links-cont {
   height: 60px;
 }
@@ -327,7 +326,7 @@ header .links-cont .links ul li::before {
 }
 
 header .links-cont .links ul li:hover::before,
-header .links-cont .links ul li:active::before {
+header .links-cont .links ul li.active::before {
   background-color: var(--color-secondary-alt);
   width: 80%;
 }
@@ -392,7 +391,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   .menu-icon {
     display: block;
     justify-self: flex-start;
-    margin-left: 20px ;
+    margin-left: 20px;
   }
 }
 .menu-icon span {
@@ -554,7 +553,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
 
 .about-cont {
   width: 100%;
-  min-height: calc( 100vh - 60px );
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -605,7 +604,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   margin: 0px auto 40px auto;
   width: 300px;
   height: 400px;
-  background: linear-gradient( var(--color-primary) , #1d375e , transparent );
+  background: linear-gradient(var(--color-primary), #1d375e, transparent);
   overflow: hidden;
   border-radius: 150px;
   padding-bottom: 1.5rem;
@@ -613,7 +612,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   max-width: 100%;
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   #About-Me .about-cont .img-about-cont {
     width: 100%;
   }
@@ -631,7 +630,6 @@ header .links-cont .links ul li a:hover span.func-brackets {
   }
 }
 
-
 @media (max-width: 450px) {
   #About-Me .about-cont .img-about-cont .img-about-me-cover {
     margin: 50px auto;
@@ -643,7 +641,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   #About-Me .about-cont .p-about-me h2 {
     font-family: monospace;
     font-size: 1.5rem;
-    font-weight: 200 ;
+    font-weight: 200;
   }
   #About-Me .about-cont .p-about-me p {
     font-family: monospace;
@@ -656,7 +654,6 @@ header .links-cont .links ul li a:hover span.func-brackets {
   }
 }
 
-
 #About-Me .about-cont .img-about-cont .img-about-me-cover img {
   display: block;
   width: 100%;
@@ -664,7 +661,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
 }
 
 #About-Me .about-cont .img-about-cont .img-about-me-cover:hover:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0%;
@@ -680,9 +677,9 @@ header .links-cont .links ul li a:hover span.func-brackets {
 }
 
 .show-more-arrow {
-  --transform-value :rotateZ(180deg) ;
-  --bottom-value : -50px ;
-  --margin-value : 60px 0 0;
+  --transform-value: rotateZ(180deg);
+  --bottom-value: -50px;
+  --margin-value: 60px 0 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -727,12 +724,12 @@ header .links-cont .links ul li a:hover span.func-brackets {
 
 #History::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 150px;
   left: 0px;
   bottom: 0px;
-  background: linear-gradient( transparent , var(--color-bg-primary) );
+  background: linear-gradient(transparent, var(--color-bg-primary));
 }
 
 #History.open {
@@ -749,7 +746,6 @@ header .links-cont .links ul li a:hover span.func-brackets {
 #History .his-block-title:first-child {
   padding: 5px 0px 0px 40px;
 }
-
 
 #History .his-block-title::before {
   position: absolute;
@@ -772,7 +768,6 @@ header .links-cont .links ul li a:hover span.func-brackets {
     left: -5px;
   }
 }
-
 
 #History .his-block {
   padding: 20px 40px 20px 40px;
@@ -823,7 +818,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
 }
 
 #History .his-block .job-responsibility {
-  width: 60%;
+  width: 75%;
   color: var(--color-text-primary);
   opacity: 0.9;
   font-family: monospace;
@@ -869,12 +864,18 @@ header .links-cont .links ul li a:hover span.func-brackets {
   align-items: center;
 }
 
-#Skills .tech-container .skills-container .skill .img-cont{
+#Skills .tech-container .skills-container .skill .img-cont {
   --transform-delay: 500ms;
   display: flex;
   width: 100px;
   height: 100px;
-  background: linear-gradient( -45deg ,var(--color-bg-primary-transparent),  var(--color-bg-secondary) ,  var(--color-bg-secondary), var(--color-bg-primary-transparent)) ;
+  background: linear-gradient(
+    -45deg,
+    var(--color-bg-primary-transparent),
+    var(--color-bg-secondary),
+    var(--color-bg-secondary),
+    var(--color-bg-primary-transparent)
+  );
   border-radius: 50%;
   margin: 15px;
   margin-bottom: 10px;
@@ -890,7 +891,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   transform: scale(1.1);
 }
 
-@media (max-width:425px) {
+@media (max-width: 425px) {
   #Skills .tech-container .skills-container .skill {
     display: flex;
     flex-wrap: wrap;
@@ -899,7 +900,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
     flex-direction: column;
     width: calc(100% / 3);
   }
-  #Skills .tech-container .skills-container .skill .img-cont{
+  #Skills .tech-container .skills-container .skill .img-cont {
     width: 70px;
     height: 70px;
     padding: 0;
@@ -908,20 +909,18 @@ header .links-cont .links ul li a:hover span.func-brackets {
   }
 }
 
-
-
 #Skills .tech-container .skills-container .skill img {
   display: block;
   width: 100%;
   padding: 10px;
 }
 
-#Skills .tech-container .skills-container .skill .skill-name{
+#Skills .tech-container .skills-container .skill .skill-name {
   font-size: 20px;
   text-align: center;
 }
-@media (max-width:425px) {
-  #Skills .tech-container .skills-container .skill .skill-name{
+@media (max-width: 425px) {
+  #Skills .tech-container .skills-container .skill .skill-name {
     font-size: 1rem;
     text-align: center;
   }
@@ -1021,7 +1020,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
 
 #Services .service-description-cont .service-buttons a {
   display: inline-block;
-  padding: 0.375rem 0.75rem;;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1036,7 +1035,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   border: 1px solid transparent;
   border-radius: 0.375rem;
   background-color: transparent;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   margin-right: 20px;
   font-weight: bold;
 }
@@ -1072,7 +1071,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
   flex-wrap: wrap;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #Work ul.work-buttons {
     width: 300px;
   }
@@ -1231,6 +1230,22 @@ header .links-cont .links ul li a:hover span.func-brackets {
   border-color: var(--color-primary);
 }
 
+#Work .gallery .cont-work .info-work .proj-buttons a.btn-private {
+  background: var(--color-bg-primary);
+  color: var(--color-primary);
+  outline-width: 2px;
+  outline-color: var(--color-primary);
+  border-color: var(--color-primary);
+  cursor: not-allowed;
+}
+#Work .gallery .cont-work .info-work .proj-buttons a.btn-private:hover {
+  background: var(--color-bg-primary);
+  color: var(--color-primary);
+  outline-width: 2px;
+  outline-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
 /* <=================== End Work =========================>*/
 /* <=================== Start Contact  =========================>*/
 #Contact {
@@ -1245,7 +1260,7 @@ header .links-cont .links ul li a:hover span.func-brackets {
 }
 
 #Contact .Contact-container {
-  margin-top:40px ;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1358,12 +1373,15 @@ textarea:focus {
   transition: all 0.5s;
 }
 
-#Contact .Contact-container .form-cont input[type="submit"]:hover + svg.send-icon {
+#Contact
+  .Contact-container
+  .form-cont
+  input[type="submit"]:hover
+  + svg.send-icon {
   color: var(--color-text-primary-alt);
 }
 
-
-#Contact .Contact-container  .social-cont {
+#Contact .Contact-container .social-cont {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1373,33 +1391,33 @@ textarea:focus {
   flex-wrap: wrap;
 }
 
-#Contact .Contact-container  .social-cont p span.full-text {
+#Contact .Contact-container .social-cont p span.full-text {
   display: block;
   font-size: 2rem;
 }
 
-#Contact .Contact-container  .social-cont p {
+#Contact .Contact-container .social-cont p {
   font-size: 0.8rem;
   font-weight: 500;
   line-height: 2;
   margin-bottom: 40px;
 }
 
-#Contact .Contact-container  .social-cont h3 {
+#Contact .Contact-container .social-cont h3 {
   text-align: center;
   position: relative;
   font-size: 1.2rem;
   color: var(--color-text-primary);
 }
-#Contact .Contact-container  .social-cont h3::before {
-  content: '#';
+#Contact .Contact-container .social-cont h3::before {
+  content: "#";
   position: absolute;
   color: var(--color-secondary);
   top: 0;
   left: -20px;
 }
 
-#Contact .Contact-container .social-cont  ul {
+#Contact .Contact-container .social-cont ul {
   display: flex;
   max-width: 500px;
   width: 100%;
@@ -1441,7 +1459,7 @@ textarea:focus {
   #Contact .Contact-container .social-cont h3 {
     font-size: 1.5rem;
   }
-  
+
   #Contact .Contact-container .social-cont p {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -1467,7 +1485,7 @@ footer .footer-container {
   text-align: center;
 }
 
-footer .footer-container .developer-name-cont{
+footer .footer-container .developer-name-cont {
   font-size: 1rem;
 }
 
@@ -1482,17 +1500,17 @@ footer .footer-container .developer-name-cont a:hover {
 }
 
 footer .footer-container .copy-right-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 10px 0 0;
   opacity: 0.7;
 }
 
-@media (max-width:320px) {
-  footer .footer-container .developer-name-cont{
-    font-size: .8rem;
+@media (max-width: 320px) {
+  footer .footer-container .developer-name-cont {
+    font-size: 0.8rem;
   }
   footer .footer-container .copy-right-text {
-    font-size: .6rem;
+    font-size: 0.6rem;
     padding: 10px;
     opacity: 0.7;
   }
